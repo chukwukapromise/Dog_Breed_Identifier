@@ -1,0 +1,15 @@
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<h1>Object Detector</h1>
+<section id="demos" class="invisible">
+  <h2>Webcam Object Detection</h2>
+  <p>Use the webcam object detection to identify human presence.</p>
+  <div>This model is trained on the PyTorch framework to identify human presence.</div>
+  <div id="liveView" class="videoView">
+    <button id="webcamButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">ENABLE WEBCAM</span>
+    </button>
+    <video id="webcam" autoplay playsinline></video>
+  </div>
+</section>
