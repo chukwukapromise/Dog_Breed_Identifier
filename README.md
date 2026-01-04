@@ -1,13 +1,14 @@
-# Object_Detector_PyTorch
+# Dog Breed Identifier
 
-A simple, effective tool to detect human presence using a webcam. This project uses Faster RCNN and trained from scratch using PyTorch. This project uses Faster RCNN architecture specifically optimized for detecting objects. It captures real-time video from your webcam and highlights human presence with a bounding box.
+A dog breed identification project built using a custom-trained machine learning model.
+Upload an image of a dog and the model predicts the dog’s breed with corrresponding breed information.
 
-The detector follows a straightforward Computer Vision pipeline:
+# Features
 
-1. Capture: Grabs a frame from the webcam.
+1. Image-based dog breed classification (take a photo of your dog, upload the image, and find out your dog's breed) 
 
-2. Transform: Resizes the image to the model's required input size (512 x 512).
+2. Custom-trained model ( the model was trained on a large dataset of up to 10k images)
 
-3. Inference: The custom PyTorch model (model.pth) processes the image.
+3. Fast inference (with the tflite model, real-time inference is fast)
 
-4. Display: If the confidence score is above 0.5, a box is drawn around the detected person.
+4. Deployed using Streamlit for real-time inference.
