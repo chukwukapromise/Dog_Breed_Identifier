@@ -1,7 +1,9 @@
 # Dog Breed Identifier
 
 A dog breed identification project built using a custom-trained machine learning model.
-Upload an image of a dog and the model predicts the dog’s breed with corrresponding breed information.
+Custom model trained to identify dog breeds from uploaded dog image. The model is able to identify up to 120 dog breeds according to the American Kernel Club breed information.
+Upload an image of a dog to get started.
+
 
 # Features
 
