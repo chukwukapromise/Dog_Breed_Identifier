@@ -5,7 +5,10 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobilenet_v2_preprocess_input
 
-model = tf.keras.models.load_model("dog-breed.keras")
+# load TFLite model
+model = tf.lite.Interpreter(model_path="dog-breed.tflite")
+model.allocate_tensors()
+
 ### load file
 uploaded_file = st.file_uploader("Choose an image file to get started", type=["jpg", "jpeg", "webp", "png"])
 
